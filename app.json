@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "TaT",
+    "slug": "TaT",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/TrafficatTech_1024x1024.png",
+    "scheme": "knusttraffic",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "KNUST Traffic uses your location to detect the nearest campus landmark when you submit a report and to follow you on the map."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "KNUST Traffic uses your location to detect the nearest campus landmark when you submit a report."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
+
